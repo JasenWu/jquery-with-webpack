@@ -1,8 +1,8 @@
 
 import { uploadFile, ajaxSubmit, modalData, fileMaxSize, getBrowserInfo } from '@models/model'// 引入数据模型
-//import {router} from '@/routes'
+// import {router} from '@/routes'
 // 样式文件
-//import v from '@views/index/index.vue'// 引入路由
+// import v from '@views/index/index.vue'// 引入路由
 require('@assets/css/index.less')
 // let Vue = window.Vue
 
