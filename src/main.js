@@ -1,30 +1,23 @@
 
 import { uploadFile, ajaxSubmit, modalData, fileMaxSize, getBrowserInfo } from '@models/model'// 引入数据模型
-// import {router} from '@/routes'
-// 样式文件
-// import v from '@views/index/index.vue'// 引入路由
+ 
 require('@assets/css/index.less')
-// let Vue = window.Vue
+
+// import Vue from 'vue';
+// import ElementUI from 'element-ui';
+// require('element-ui/lib/theme-chalk/index.css');
+ 
+// Vue.use(ElementUI);
+
+ 
 
 // new Vue({
-//   router,
-//   data: {
-//     message: 'Hello Vue!'
-//   },
 //   components: {
-//     v
+//     'c-select':require('./views/index/select.vue').default,
 //   },
-//   template: `<div>
-//   <v />
-//   <h1>Hello App!</h1>
-//   <p>
-
-//     <router-link to="/foo">Go to Foo</router-link>
-//     <router-link to="/bar">Go to Bar</router-link>
-//   </p>
-//     <router-view></router-view>
-//   </div>`
+//   template: `<c-select></c-select>`
 // }).$mount('#vue')
+
 
 const $ = window.$
 const formPage = $('#form-page')// 表单提交页面
@@ -132,6 +125,9 @@ function handleUpload (obj) {
         }
         let html = `<span>${fileName}</span>`
         selectedFile.html(html)
+         
+        selectedFile.css('display','block');
+
 
         showDailog('success')
       }

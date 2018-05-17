@@ -1,293 +1,293 @@
  //公共样式 
-
- html,body{
-    height: 100%;
+ html,
+ body {
+     height: 100%;
  }
 
- html,body,input, textarea, select, button{
-    font-family: "Helvetica Neue",Helvetica,"PingFangSC-Regular","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+ html,
+ body,
+ input,
+ textarea,
+ select,
+ button {
+     font-family: "Helvetica Neue", Helvetica, "PingFangSC-Regular", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
  }
- html,body,ul,ol{
+
+ html,
+ body,
+ ul,
+ ol {
      margin: 0;
      padding: 0;
-
  }
 
  ::placeholder {
-    color: #CCCCCC !important;
-    font-size: 18px;
-    font-weight: 200;
-  }
-  .myheader {font-family: 'Condiment', cursive;}
- 
- //表单页
-#form-page{
-    background:#eee url('/assets/img/gw_bg.png') no-repeat center top;
-    min-height: 100%;
-    padding-top: 170px;
-    padding-bottom: 170px;
-    .error{
-        line-height: 16px;
-        color:red;
-        padding: 5px 0;
-        display: block;
-    }
-    .form-main{
- 
-        width: 1046px;
-        margin: 0 auto;
-        
-        .items-wrap{
-            padding: 100px;
-            background:#fff url('/assets/img/house.png') no-repeat right top;
-            background-size:360px auto;
-            box-sizing: border-box;
-            position: relative;
-            .house-pic{
-                position: absolute;
-                right:0;
-                top:0;
-                width: 552px;
-                z-index: 0;
-            }
-            .logo-wrap{
-                padding-bottom: 100px;
-                text-align: center;
-            }
-            .form-title{
-                font-size: 24px;
-                color:#666666;
-                font-weight: normal;
-                margin: 0;
+     color: #CCCCCC !important;
+     font-size: 18px;
+     font-weight: 200;
+
+ }
+ input,select{
+    outline-color:#5A8BFF;
     
-            }
-            .blue-ling-wrap{
-                padding: 15px 0;
-            }
-          
-                .form-item{
-                    padding-bottom: 15px;
-                    .title{
-                        font-size: 18px;
-                        color:#333;
-                        line-height: 24px;
-                        .star{
-                            color:#F5A623;
-                            line-height: inherit;
-                        }
-                    }
-                    .form-input{
-                        background: #F9F9F9;
-                        color:#000;
-                        width: 100%;
-                        display: block;
-                        height: 64px;
-                        line-height: 64px;
-                        font-size: 24px;
-                        border: 1px solid #F4F4F4;
-                        
-                        box-sizing:border-box; 
-                        padding-left: 10px;
-                        padding-right: 10px;
-                        margin: 0;
-                    }
-                    .form-select{
-                        display: block;
-                        width: 100%;
-                        color: #555;
-                        font-size: 18px;
-                        font-weight: 200;
-                        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-                        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-                        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-                    }
-                    ul.radio-group{
-                        display: flex;
-                        padding: 0;
-                        justify-content: space-between;
-                        li{
-                            padding-right: 15px;
-                            list-style: none;
-                            line-height: 24px;
-                            display: flex;
-                            label{
-                                font-size: 18px;
-                                color:#666666;
-                               
-                            }
-                            input{
-                                font-size: 24px;
-                                color:#666666;
-                                display: inline-block;
-                                 
-                            }
-                        }
-                    }
-                    .upload-file{
-                        display: flex;
-                        flex-wrap:wrap;
-                        .upload-component{
-                            width: 210px;
-                            height: 64px;
-                            overflow: hidden;
-                            background: #F9F9F9;
-                            text-align: center;
-                            line-height: 64px;
-                            color:#909399;
-                            font-size: 18px;
-                            cursor: pointer;
-                          
-                            
-                        }
-                        //选择的上传文件
-                        .select-files{
-                            display: block;
-                            width: 100%;
-                            padding: 5px;
-                            color:red;
-                        }
-                        .form-upload-input{
-                            display: none;
-
-                        }
-                        .remind{
-                            color:#C0C4CC;
-                            padding-left: 15px;
-                            line-height: 80px;
-                        }
-                    }
-                    
-                }
-                .intro{
-                    font-size: 14px;
-                    color:#666666;
-                    margin: 0;
-                    
-                }
-        
-        
-        
-            
-        }
-        .submit-area{
-            background: #F6F6F6;
-       
-            text-align: center;
-            padding:  37px 0;
-                .submit-form{
-                width: 225px;
-                height: 70px;
-                background: #5A8BFF;
-                border-radius: 65px;
-                overflow: hidden;
-                border: none;
-                font-size: 20px;
-                color:#fff;
-                letter-spacing: 2px;
-
-
-                }
-        }
-
-
-
-    }
  }
 
-//提交成功页面
-#success-page{
-    background:#eee url('/assets/img/gw_bg.png') no-repeat center top;
-    padding-top: 170px;
-    padding-bottom: 10px;
-    display: none;
-    box-sizing: border-box;
-    .content-main{
-        width: 1046px;
-        margin: 0 auto;
-        background: #fff;
-        
-        position: relative;
-        text-align: center;
-        padding-top: 150px;
-        padding-bottom: 150px;
-       .big-img{
-           position: absolute;
-           right:20px;
-           bottom:15px;
-       }
-       .success-text{
-           font-size: 46px;
-           margin: 0;
-           color:#67C23A;
-           font-weight: normal;
-           padding-top: 15px;
-       }
-    }
-    
+ .myheader {
+     font-family: 'Condiment', cursive;
+ } //表单页
+ #form-page {
+     background: #eee url('/assets/img/gw_bg.png') no-repeat center top;
+     min-height: 100%;
+     padding-top: 170px;
+     padding-bottom: 170px;
+     .error {
+         line-height: 16px;
+         color: red;
+         padding: 5px 0;
+         display: block;
+     }
+     .form-main {
+         width: 1046px;
+         margin: 0 auto;
+         .items-wrap {
+             padding: 100px;
+             background: #fff url('/assets/img/house.png') no-repeat right top;
+             background-size: 360px auto;
+             box-sizing: border-box;
+             position: relative;
+             .house-pic {
+                 position: absolute;
+                 right: 0;
+                 top: 0;
+                 width: 552px;
+                 z-index: 0;
+             }
+             .logo-wrap {
+                 padding-bottom: 100px;
+                 text-align: center;
+             }
+             .form-title {
+                 font-size: 24px;
+                 color: #666666;
+                 font-weight: normal;
+                 margin: 0;
+             }
+             .blue-ling-wrap {
+                 padding: 15px 0;
+             }
+             .form-item {
+                 padding-bottom: 15px;
+                 .title {
+                     font-size: 18px;
+                     color: #333;
+                     line-height: 24px;
+                     .star {
+                         color: #F5A623;
+                         line-height: inherit;
+                         position: relative;
+                         .star-icon{
+                             position: absolute;
+                             left:10px;
+                             top:3px;
+                         }
+                     }
+                 }
+                 .form-input {
+                     background: #F9F9F9;
+                     color: #000;
+                     width: 100%;
+                     display: block;
+                     height: 64px;
+                     line-height: 64px;
+                     font-size: 24px;
+                     border: 1px solid #F4F4F4;
+                     box-sizing: border-box;
+                     padding-left: 10px;
+                     padding-right: 10px;
+                     margin: 0;
+                 }
+                 .form-select {
+                     display: block;
+                     width: 100%;
+                     color: #555;
+                     font-size: 18px;
+                     font-weight: 200;
+                     -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+                     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+                     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+                 }
+                 ul.radio-group {
+                     display: flex;
+                     padding: 0;
+                     justify-content: space-between;
+                     li {
+                         padding-right: 15px;
+                         list-style: none;
+                         line-height: 24px;
+                         display: flex;
+                         label {
+                             font-size: 18px;
+                             color: #666666;
+                         }
+                         input {
+                             font-size: 24px;
+                             color: #666666;
+                             display: inline-block;
+                         }
+                     }
+                 }
+                 .upload-file {
+                     display: flex;
+                     flex-wrap: wrap;
+                     .upload-component {
+                         width: 210px;
+                         height: 64px;
+                         overflow: hidden;
+                         background: #F9F9F9;
+                         text-align: center;
+                         line-height: 64px;
+                         color: #909399;
+                         font-size: 18px;
+                         cursor: pointer;
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         img {
+                             margin-right: 5px;
+                             width: 16px;
+                         }
+                     } //选择的上传文件
+                     .select-files {
+                         display: block;
+                         width: 100%;
+                        
+                         color: red;
+                         span#selectedFile{
+                             display: none;
+                            padding: 5px;
+                         }
+                     }
+                     .form-upload-input {
+                         display: none;
+                     }
+                     .remind {
+                         color: #C0C4CC;
+                         padding-left: 15px;
+                         line-height: 64px;
+                     }
+                 }
+             }
+             .intro {
+                 font-size: 14px;
+                 color: #666666;
+                 margin: 0;
+             }
+         }
+         .submit-area {
+             background: #F6F6F6;
+             text-align: center;
+             padding: 37px 0;
+             .submit-form {
+                 width: 225px;
+                 height: 70px;
+                 background: #5A8BFF;
+                 border-radius: 65px;
+                 overflow: hidden;
+                 border: none;
+                 font-size: 20px;
+                 color: #fff;
+                 letter-spacing: 2px;
+             }
+         }
+     }
+ }
 
-}
+ //提交成功页面
+ #success-page {
+     background: #eee url('/assets/img/gw_bg.png') no-repeat center top;
+     padding-top: 170px;
+     padding-bottom: 10px;
+     display: none;
+     box-sizing: border-box;
+     .content-main {
+         width: 1046px;
+         margin: 0 auto;
+         background: #fff;
+         position: relative;
+         text-align: center;
+         padding-top: 150px;
+         padding-bottom: 150px;
+         .big-img {
+             position: absolute;
+             right: 20px;
+             bottom: 15px;
+         }
+         .success-text {
+             font-size: 46px;
+             margin: 0;
+             color: #67C23A;
+             font-weight: normal;
+             padding-top: 15px;
+         }
+     }
+ }
 
-// 弹窗
-.modal-bg{
-    position: fixed;
-    left:0;
-    top:0;
-    right:0;
-    bottom:0;
-    z-index: 1;
-    background-color: rgba(0,0,0,0.6);
-    display: none;
-}
-.modal-main{
-    position: fixed;
-    left:50%;
-    top:50%;
-    z-index: 2;
-    display: none;
+ // 弹窗
+ .modal-bg {
+     position: fixed;
+     left: 0;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     z-index: 1;
+     background-color: rgba(0, 0, 0, 0.6);
+     display: none;
+ }
 
-    @width:538px;//弹窗内容宽度
-    @height:126px;//弹窗内容高度
-    .modal-content{
-        width: @width;
-        height: @height;
-        margin-left: -@width / 2;
-        margin-top: -@height / 2;
-        background: white;
-        box-shadow: 1px 1px 5px #eee;
-        text-align: center;
-         
-        font-size: 24px;
-        box-sizing: border-box;
-        padding-top: 50px;
-        .content{
-            padding-left: 160px;
+ .modal-main {
+     position: fixed;
+     left: 50%;
+     top: 50%;
+     z-index: 2;
+     display: none;
+     @width: 538px; //弹窗内容宽度
+     @height: 126px; //弹窗内容高度
+     .modal-content {
+         width: @width;
+         height: @height;
+         margin-left: -@width / 2;
+         margin-top: -@height / 2;
+         background: white;
+         box-shadow: 1px 1px 5px #eee;
+         text-align: center;
+         font-size: 24px;
+         box-sizing: border-box;
+         padding-top: 50px;
+         .content {
+             padding-left: 160px;
+             img {
+                 float: left;
+             }
+             span {
+                 padding-left: 10px;
+                 float: left;
+                 line-height: 37px;
+             }
+         }
+     }
+ }
 
-            img{
-                float: left;
-            }
-            span{
-                padding-left: 10px;
-                float: left;
-                line-height: 37px;
-            }
-        }
-    }
-}
-
-.browser{
-    @height:40px;
-    position: fixed;
-    left:0;
-    top:0;
-    right:0;
-   
-    z-index: 10;
-    height:@height;
-    line-height: @height;
-    text-align: center;
-    background: blanchedalmond;
-    border-bottom:1px solid #ccc;
-    display: none;
-
-
-}
+ .browser {
+     @height: 40px;
+     position: fixed;
+     left: 0;
+     top: 0;
+     right: 0;
+     z-index: 10;
+     height: @height;
+     line-height: @height;
+     text-align: center;
+     background: blanchedalmond;
+     border-bottom: 1px solid #ccc;
+     display: none;
+ }

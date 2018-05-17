@@ -8,6 +8,7 @@ console.log('path:',resolve('src/assets'));
 module.exports = {
   extensions: ['.js', '.vue', '.json', '.less'],
   alias: {
+     vue: 'vue/dist/vue.js',
     '@': resolve('src'),
     '@static': resolve('static'),
     '@assets': resolve('src/assets'),

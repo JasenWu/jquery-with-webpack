@@ -12,8 +12,8 @@
      
     <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
     <script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>
-    <script src="https://cdn.bootcss.com/vue-router/3.0.1/vue-router.min.js"></script>
-    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Condiment'>
+ 
+    
 </head>
 
 <body>
@@ -43,7 +43,9 @@
 
                         <div class="form-item">
                             <p class="title">1、姓名
-                                <span class="star">*</span>
+                                <span class="star">
+                                    <span class="star-icon">*</span>
+                                </span>
                             </p>
 
                             <input class="form-input" type="text" id="name" name="name" placeholder="请输入" minlength="2" required />
@@ -51,7 +53,9 @@
                         </div>
                         <div class="form-item">
                             <p class="title">2、E-mail
-                                <span class="star">*</span>
+                                <span class="star">
+                                    <span class="star-icon">*</span>
+                                </span>
                             </p>
 
                             <input class="form-input" id="email" name="email" placeholder="请输入" type="email" required />
@@ -59,7 +63,9 @@
                         </div>
                         <div class="form-item">
                             <p class="title">3、手机
-                                <span class="star">*</span>
+                                <span class="star">
+                                    <span class="star-icon">*</span>
+                                </span>
                             </p>
 
                             <input class="form-input" id="phone" name="phone" placeholder="请输入" type="text" minlength isMobile required />
@@ -67,7 +73,9 @@
                         </div>
                         <div class="form-item">
                             <p class="title">4、微信
-                                <span class="star">*</span>
+                                <span class="star">
+                                    <span class="star-icon">*</span>
+                                </span>
                             </p>
 
                             <input class="form-input" type="text" id="weixin" name="weixin" placeholder="请输入" required />
@@ -76,7 +84,7 @@
                         <div class="form-item">
                             <p class="title">5、您的最高学历
 
-                            </p>
+                            </p>    
                             <select class="form-input form-select" id="education" name="education">
                                 <option value='' checked>请选择</option>
                                 <option value='1'>小学</option>
@@ -125,7 +133,9 @@
 
                         <div class="form-item">
                             <p class="title">8、上传附件
-                                <span class="star">*</span>
+                                <span class="star">
+                                    <span class="star-icon">*</span>
+                                </span>
                             </p>
                             <div class="upload-file">
                                 <div id="startUpload" class="upload-component">
