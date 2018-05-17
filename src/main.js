@@ -1,15 +1,13 @@
 
 import { uploadFile, ajaxSubmit, modalData, fileMaxSize, getBrowserInfo } from '@models/model'// 引入数据模型
- 
+
 require('@assets/css/index.less')
 
 // import Vue from 'vue';
 // import ElementUI from 'element-ui';
 // require('element-ui/lib/theme-chalk/index.css');
- 
-// Vue.use(ElementUI);
 
- 
+// Vue.use(ElementUI);
 
 // new Vue({
 //   components: {
@@ -17,7 +15,6 @@ require('@assets/css/index.less')
 //   },
 //   template: `<c-select></c-select>`
 // }).$mount('#vue')
-
 
 const $ = window.$
 const formPage = $('#form-page')// 表单提交页面
@@ -125,9 +122,8 @@ function handleUpload (obj) {
         }
         let html = `<span>${fileName}</span>`
         selectedFile.html(html)
-         
-        selectedFile.css('display','block');
 
+        selectedFile.css('display', 'block')
 
         showDailog('success')
       }
