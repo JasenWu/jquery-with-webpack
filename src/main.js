@@ -77,6 +77,9 @@ function showDailog (type, msg) {
     case 'commmon':
       show(modalData.toBig.icon, msg)
       break
+    case 'error':
+      show(modalData.failure.icon, msg)
+      break  
   }
 }
 // 解析文件并上传
@@ -169,6 +172,11 @@ function initPage (submitFile) {
 $.validator.setDefaults({
   submitHandler: function (form) {
     // alert("提交事件!");
+    if(!attachment.id){
+     
+      showDailog('error', '请先上传附件!')
+      return;
+    }
     let params = {
       realName: $('#name').val(),
       mobile: $('#phone').val(),
@@ -192,7 +200,7 @@ $.validator.setDefaults({
       }
     }, function (res) {
       let { retMsg } = res
-      showDailog(modalData.commonError.icon, retMsg)
+      showDailog('error', retMsg)
     })
   }
 })
