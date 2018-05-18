@@ -79,7 +79,7 @@ function showDailog (type, msg) {
       break
     case 'error':
       show(modalData.failure.icon, msg)
-      break  
+      break
   }
 }
 // 解析文件并上传
@@ -172,10 +172,9 @@ function initPage (submitFile) {
 $.validator.setDefaults({
   submitHandler: function (form) {
     // alert("提交事件!");
-    if(!attachment.id){
-     
+    if (!attachment.id) {
       showDailog('error', '请先上传附件!')
-      return;
+      return
     }
     let params = {
       realName: $('#name').val(),
